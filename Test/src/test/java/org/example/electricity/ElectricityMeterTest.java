@@ -2,12 +2,11 @@ package org.example.electricity;
 
 import org.junit.Assert;
 
-import static org.junit.Assert.*;
 
 public class ElectricityMeterTest {
 
     @org.junit.Test
-    public void addKwh() {
+    public void addKwh_newMeter_properAddition() {
 
         ElectricityMeter electricityMeter = new ElectricityMeter();
         electricityMeter.addKwh(1);
