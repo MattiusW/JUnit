@@ -47,4 +47,15 @@ public class ElectricityMeterTest {
         electricityMeter.addKwh(11);
         Assert.assertTrue(electricityMeter.getKwh() == 22);
     }
+
+    //Given when then
+    @Test
+    public void givenNewMeterWhenFirstAdditionThenIncreaseCounter(){
+        ElectricityMeter electricityMeter = new ElectricityMeter();
+        electricityMeter.addKwh(7);
+        electricityMeter.addKwh(7);
+        electricityMeter.addKwh(7);
+        Assert.assertTrue(electricityMeter.getKwh() == 21);
+    }
+
 }
