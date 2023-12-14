@@ -39,4 +39,12 @@ public class ElectricityMeterTest {
         Assert.assertTrue(electricityMeter.getKwh() == 11);
 
     }
+
+    @Test
+    public void kwhCounterIncreas(){
+        ElectricityMeter electricityMeter = new ElectricityMeter();
+        electricityMeter.addKwh(11);
+        electricityMeter.addKwh(11);
+        Assert.assertTrue(electricityMeter.getKwh() == 22);
+    }
 }
