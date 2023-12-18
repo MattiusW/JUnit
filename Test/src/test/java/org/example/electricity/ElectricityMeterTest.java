@@ -23,7 +23,7 @@ public class ElectricityMeterTest {
         ElectricityMeter electricityMeter = new ElectricityMeter();
         electricityMeter.addKwh(2);
         electricityMeter.addKwh(5);
-        Assert.assertTrue(electricityMeter.getKwh() == 7);
+        Assert.assertTrue("Addition 2 and 5 should be 7: ", electricityMeter.getKwh() == 7);
 
     }
 
