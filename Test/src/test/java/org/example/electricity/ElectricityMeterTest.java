@@ -58,7 +58,8 @@ public class ElectricityMeterTest {
         Assert.assertTrue(electricityMeter.getKwh() == 21);
     }
 
-    @Test
+    //Test handle exception
+    @Test(expected = ArithmeticException.class)
     public void getHowMoreExpensiveNormalls() {
         ElectricityMeter electricityMeter = new ElectricityMeter();
         electricityMeter.setCentsForKwh(90);
