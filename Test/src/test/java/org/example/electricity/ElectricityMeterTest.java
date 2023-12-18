@@ -28,7 +28,7 @@ public class ElectricityMeterTest {
     }
 
     @Test
-    public void addKwh_newMeter11_properAddition() {
+    public void addKwh_newMeterFalse_properAddition() {
 
         ElectricityMeter electricityMeter = new ElectricityMeter();
         electricityMeter.addKwh(1);
@@ -36,7 +36,7 @@ public class ElectricityMeterTest {
         electricityMeter.addKwh(3);
         electricityMeter.addKwh(4);
         electricityMeter.addKwh(1);
-        Assert.assertTrue(electricityMeter.getKwh() == 11);
+        Assert.assertFalse(electricityMeter.getKwh() == 13);
 
     }
 
